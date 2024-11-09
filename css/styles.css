@@ -626,7 +626,7 @@ li:first-child > .mob-link {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: rgba(142, 143, 153, 0.5);
 }
 
 textarea.modal-input {
@@ -897,38 +897,128 @@ textarea.modal-input {
 /* footer */
 
 .footer {
+  background-color: #2e2f42;
+  padding: 96px 0;
+  min-width: 320px;
 }
-.container {
+
+.footer > .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
 }
-.footer-logo-box {
+
+.footer .logo {
+  text-align: center;
+  margin-bottom: 16px;
 }
-.logo {
-}
-.logo-bottom {
-}
+
 .footer-text {
+  color: #f4f4fd;
 }
-.footer-social-box {
-}
+
 .footer-social-title {
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
 }
+
 .footer-social-list {
+  display: flex;
+  gap: 16px;
 }
-.footer-social-item {
-}
-.footer-social-link {
-}
-.footer-social-icon {
-}
-.footer-subscribe-box {
-}
+
 .footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
-.footer-label {
-}
+
 .footer-input {
+  background-color: transparent;
+  width: 288px;
+  height: 40px;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.hero-button {
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
+
+.footer-subscribe-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  min-height: 40px;
+  padding: 8px 24px;
+}
+
 .footer-mail-icon {
+  fill: #fff;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 96px 92px;
+  }
+
+  .footer > .container {
+    justify-content: left;
+    gap: 72px 24px;
+    align-items: baseline;
+  }
+
+  .footer-logo-box {
+    width: 264px;
+  }
+
+  .footer .logo {
+    text-align: left;
+    display: inline-flex;
+  }
+
+  .footer-social-title {
+    text-align: left;
+  }
+
+  .footer-social-link:hover,
+  .footer-social-link:focus {
+    background-color: #31d0aa;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer > .container {
+    gap: initial;
+  }
+
+  .footer-logo-box {
+    margin-right: 120px;
+  }
+
+  .footer-social-box {
+    margin-right: 80px;
+  }
 }
