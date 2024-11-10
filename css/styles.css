@@ -438,7 +438,6 @@ li:first-child > .mob-link {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg/people-office-tab.jpg);
-    min-width: 768px;
   }
 
   @media (webkit-min-device-pixel-ratio: 2),
@@ -935,7 +934,7 @@ textarea.modal-input {
 .footer-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 16px 24px;
 }
 
 .footer-input {
@@ -1014,10 +1013,11 @@ textarea.modal-input {
 
   .footer > .container {
     gap: initial;
+    flex-wrap: nowrap;
   }
 
   .footer-logo-box {
-    margin-right: 120px;
+    margin-right: calc(100% - 1008px);
   }
 
   .footer-social-box {
