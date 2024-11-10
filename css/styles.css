@@ -811,6 +811,12 @@ textarea.modal-input {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
+}
+
 /* our portfolio section */
 
 .portfolio-title {
@@ -869,7 +875,7 @@ textarea.modal-input {
   }
 
   .portfolio-item {
-    flex-basis: 356px;
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
@@ -879,7 +885,7 @@ textarea.modal-input {
   }
 
   .portfolio-item {
-    flex-basis: 360px;
+    flex-basis: calc((100% - 48px) / 3);
     box-shadow: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
